@@ -1,14 +1,9 @@
 package src;
 
-import java.awt.EventQueue;
-
-import javax.swing.ButtonGroup;
-import javax.swing.ComboBoxModel;
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
-import javax.swing.event.ListDataListener;
 import javax.swing.JLabel;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
@@ -17,18 +12,9 @@ import javax.swing.JMenuItem;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.nio.file.Files;
-import java.nio.file.LinkOption;
-import java.nio.file.Paths;
 import java.util.ArrayList;
-import java.util.Iterator;
-
 import javax.swing.JTextField;
-import javax.swing.JRadioButton;
 import javax.swing.JComboBox;
 import javax.swing.JButton;
 

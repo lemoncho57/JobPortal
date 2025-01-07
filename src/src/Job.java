@@ -22,7 +22,7 @@ public final class Job
 	{
 		try (BufferedReader reader = Files.newBufferedReader(Paths.get(path)))
 		{
-			List<String> lines = reader.lines().collect(Collectors.toList());
+			List<String> lines = reader.lines().map(line -> line.replace("\\n", "\n")).collect(Collectors.toList())/*.collect(Collectors.toList())*/;
 			title = lines.get(0);
 			description = lines.get(1);
 			location = lines.get(2);
