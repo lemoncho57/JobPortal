@@ -2,10 +2,16 @@ package src;
 
 public class Main 
 {
-
+	private static JobSearcher searcher;
+	
 	public static void main(String[] args)
 	{
-		JobSearcher searcher = new JobSearcher();
+		searcher = new JobSearcher();
 		//searcher.setVisible(true);
+	}
+	
+	public static JobSearcher GetSearcher()
+	{
+		return searcher;
 	}
 }

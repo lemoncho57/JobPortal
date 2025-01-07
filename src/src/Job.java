@@ -16,6 +16,7 @@ public final class Job
 	public String salary;
 	public String experience;
 	public JobWorkTime workTime;
+	public String contactNumber;
 	
 	public void readFromFile(String path)
 	{
@@ -29,6 +30,7 @@ public final class Job
 			salary = lines.get(4);
 			experience = lines.get(5);
 			workTime = JobWorkTime.valueOf(lines.get(6).toUpperCase());
+			contactNumber = lines.get(7);
 		} 
 		catch (IOException e)
 		{

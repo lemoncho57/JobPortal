@@ -59,6 +59,7 @@ public class JobSearcher extends JFrame implements ActionListener
 	 */
 	public JobSearcher() 
 	{
+		setResizable(false);
 		setTitle("Job Portal");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 709, 510);
@@ -165,7 +166,8 @@ public class JobSearcher extends JFrame implements ActionListener
 	public void actionPerformed(ActionEvent e) 
 	{
 		if (e.getSource() == btnSearch)
-			PrintJobs();
+			//PrintJobs();
+			new JobResults();
 		if (e.getSource() == quitFileMenuItem)
 			System.exit(0);
 	}
@@ -204,7 +206,13 @@ public class JobSearcher extends JFrame implements ActionListener
 			System.out.printf("Salary: %s\n", job.salary);
 			System.out.printf("Experience: %s\n", job.experience);
 			System.out.printf("Work Time: %s\n", job.workTime.toString());
+			System.out.printf("Contact Number: %s\n", job.contactNumber);
 			System.out.println("-----------------------------------");
 		}
+	}
+
+	public ArrayList<Job> GetJobs()
+	{
+		return jobs;
 	}
 }
